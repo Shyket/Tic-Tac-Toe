@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.paint.*?>
+<?import java.lang.*?>
+<?import javafx.scene.shape.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane maxHeight="420.0" minHeight="420.0" prefHeight="420.0" prefWidth="345.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.company.UIController.GameBoardUIController">
+   <children>
+      <AnchorPane fx:id="boardPane" maxHeight="388.0" minHeight="388.0" minWidth="345.0" prefHeight="388.0" prefWidth="345.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <children>
+            <Button id="8" fx:id="button8" layoutX="124.0" layoutY="245.0" mnemonicParsing="false" onAction="#boardButtonEventHandle" prefHeight="102.0" prefWidth="102.0" style="-fx-background-color: transparent;">
+               <font>
+                  <Font name="System Bold" size="35.0" />
+               </font>
+            </Button>
+            <Button id="7" fx:id="button7" layoutX="21.0" layoutY="245.0" mnemonicParsing="false" onAction="#boardButtonEventHandle" prefHeight="102.0" prefWidth="102.0" style="-fx-background-color: transparent;">
+               <font>
+                  <Font name="System Bold" size="35.0" />
+               </font>
+            </Button>
+            <Button id="5" fx:id="button5" layoutX="125.0" layoutY="142.0" mnemonicParsing="false" onAction="#boardButtonEventHandle" prefHeight="102.0" prefWidth="102.0" style="-fx-background-color: transparent;">
+               <font>
+                  <Font name="System Bold" size="35.0" />
+               </font>
+            </Button>
+            <Button id="1" fx:id="button1" layoutX="21.0" layoutY="40.0" mnemonicParsing="false" onAction="#boardButtonEventHandle" prefHeight="103.0" prefWidth="102.0" style="-fx-background-color: transparent;">
+               <font>
+                  <Font name="System Bold" size="35.0" />
+               </font>
+            </Button>
+            <Button id="6" fx:id="button6" layoutX="228.0" layoutY="143.0" mnemonicParsing="false" onAction="#boardButtonEventHandle" prefHeight="103.0" prefWidth="100.0" style="-fx-background-color: transparent;" textAlignment="CENTER">
+               <font>
+                  <Font name="System Bold" size="35.0" />
+               </font>
+            </Button>
+            <Button id="3" fx:id="button3" layoutX="228.0" layoutY="40.0" mnemonicParsing="false" onAction="#boardButtonEventHandle" prefHeight="103.0" prefWidth="99.6" style="-fx-background-color: transparent;">
+               <font>
+                  <Font name="System Bold" size="35.0" />
+               </font>
+            </Button>
+            <Button id="4" fx:id="button4" layoutX="21.0" layoutY="142.0" mnemonicParsing="false" onAction="#boardButtonEventHandle" prefHeight="103.0" prefWidth="102.0" style="-fx-background-color: transparent;">
+               <font>
+                  <Font name="System Bold" size="35.0" />
+               </font>
+            </Button>
+            <Button id="2" fx:id="button2" layoutX="124.0" layoutY="40.0" mnemonicParsing="false" onAction="#boardButtonEventHandle" prefHeight="103.0" prefWidth="102.0" style="-fx-background-color: transparent;">
+               <font>
+                  <Font name="System Bold" size="35.0" />
+               </font>
+            </Button>
+            <Button id="9" fx:id="button9" layoutX="228.0" layoutY="245.0" mnemonicParsing="false" onAction="#boardButtonEventHandle" prefHeight="102.0" prefWidth="100.0" style="-fx-background-color: transparent;">
+               <font>
+                  <Font name="System Bold" size="35.0" />
+               </font>
+            </Button>
+            <Line id="horizontalline1" fx:id="mainHorizontalLine1" endX="100.0" layoutX="174.0" layoutY="142.0" scaleX="1.5" startX="-100.0" strokeWidth="5.0" AnchorPane.bottomAnchor="243.5" AnchorPane.leftAnchor="71.5" AnchorPane.rightAnchor="68.5" AnchorPane.topAnchor="139.5" />
+            <Line fx:id="verticalMatch2" endX="100.0" layoutX="176.0" layoutY="194.0" rotate="90.0" scaleX="1.5" startX="-100.0" stroke="#e41d1d" strokeWidth="3.0" visible="false" />
+            <Line id="horizontalline2" fx:id="mainHorizontalLine2" endX="100.0" layoutX="174.0" layoutY="244.0" scaleX="1.5" startX="-100.0" strokeWidth="5.0" />
+            <Line id="verticleline1" fx:id="mainVerticalLine1" endX="100.0" layoutX="123.0" layoutY="193.0" rotate="90.0" scaleX="1.5" startX="-100.0" strokeWidth="5.0" AnchorPane.bottomAnchor="192.5" AnchorPane.leftAnchor="20.5" AnchorPane.rightAnchor="119.5" AnchorPane.topAnchor="190.5" />
+            <Line fx:id="cornerMatch2" endX="100.0" layoutX="175.0" layoutY="194.0" rotate="-45.0" scaleX="2.0" startX="-100.0" stroke="#dd0e0e" strokeWidth="3.0" visible="false" />
+            <Line fx:id="verticalMatch3" endX="100.0" layoutX="279.0" layoutY="194.0" rotate="90.0" scaleX="1.52" startX="-100.0" stroke="#e41d1d" strokeWidth="3.0" visible="false" />
+            <Line fx:id="cornerMatch1" endX="100.0" layoutX="173.0" layoutY="189.0" rotate="45.0" scaleX="2.0" startX="-100.0" stroke="#dd0e0e" strokeWidth="3.0" visible="false" />
+            <Line id="verticleline2" fx:id="mainVerticalLine2" endX="100.0" layoutX="228.0" layoutY="193.0" rotate="90.0" scaleX="1.5" startX="-100.0" strokeWidth="5.0" AnchorPane.bottomAnchor="192.5" AnchorPane.leftAnchor="125.5" AnchorPane.rightAnchor="14.5" AnchorPane.topAnchor="190.5" />
+            <Line fx:id="horizontalMatch1" endX="100.0" layoutX="173.0" layoutY="90.0" scaleX="1.5" startX="-100.0" stroke="#e41d1d" strokeWidth="3.0" visible="false" />
+            <Line fx:id="verticalMatch1" endX="100.0" layoutX="72.0" layoutY="193.0" rotate="90.0" scaleX="1.5" startX="-100.0" stroke="#e41d1d" strokeWidth="3.0" visible="false" />
+            <Line fx:id="horizontalMatch2" endX="100.0" layoutX="173.0" layoutY="194.0" scaleX="1.5" startX="-100.0" stroke="#e41d1d" strokeWidth="3.0" visible="false" />
+            <Line fx:id="horizontalMatch3" endX="100.0" layoutX="173.0" layoutY="296.0" scaleX="1.5" startX="-100.0" stroke="#e41d1d" strokeWidth="3.0" visible="false" />
+            <Label fx:id="resultLabel" alignment="CENTER" contentDisplay="CENTER" layoutX="12.0" layoutY="364.0" prefHeight="45.0" prefWidth="318.0" textAlignment="JUSTIFY">
+               <font>
+                  <Font name="System Bold" size="15.0" />
+               </font>
+            </Label>
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>

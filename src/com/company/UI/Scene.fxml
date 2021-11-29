@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.effect.*?>
+<?import javafx.scene.shape.*?>
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane maxHeight="420.0" maxWidth="680.0" minHeight="420.0" minWidth="680.0" prefHeight="420.0" prefWidth="680.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.company.UIController.SceneController">
+   <children>
+      <HBox prefHeight="400.0" prefWidth="614.0" AnchorPane.bottomAnchor="5.0" AnchorPane.leftAnchor="5.0" AnchorPane.rightAnchor="5.0" AnchorPane.topAnchor="5.0">
+         <children>
+            <SplitPane dividerPositions="0.58" prefHeight="400.0" prefWidth="621.0">
+              <items>
+                <AnchorPane fx:id="leftPane" maxHeight="411.0" minHeight="400.0" minWidth="345.0" prefHeight="411.0" prefWidth="345.0" SplitPane.resizableWithParent="false" />
+                <AnchorPane maxWidth="321.0" minHeight="160.0" minWidth="321.0" prefHeight="160.0" prefWidth="321.0" SplitPane.resizableWithParent="false">
+                     <children>
+                        <AnchorPane layoutX="2.0" layoutY="3.0" maxWidth="301.0" minWidth="264.0" prefHeight="378.0" prefWidth="301.0" AnchorPane.leftAnchor="5.0" AnchorPane.rightAnchor="5.0">
+                           <children>
+                              <Button id="randomAI" fx:id="randomAIButton" layoutX="2.0" layoutY="270.0" maxHeight="31.0" mnemonicParsing="false" onAction="#AIButtonEventHandle" prefHeight="31.0" prefWidth="243.0" text="START WITH RANDOM AI" AnchorPane.leftAnchor="2.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="270.0">
+                                 <font>
+                                    <Font name="System Bold" size="15.0" />
+                                 </font>
+                              </Button>
+                              <Button id="defAI" fx:id="defAIButton" layoutX="2.0" layoutY="320.0" maxHeight="31.0" mnemonicParsing="false" onAction="#AIButtonEventHandle" prefHeight="31.0" prefWidth="243.0" text="START WITH DEFENSIVE AI" AnchorPane.leftAnchor="2.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="320.0">
+                                 <font>
+                                    <Font name="System Bold" size="15.0" />
+                                 </font>
+                              </Button>
+                              <Label fx:id="themeLabel" layoutX="2.0" layoutY="6.0" prefHeight="45.0" prefWidth="282.0" text="THEME" AnchorPane.leftAnchor="2.0" AnchorPane.rightAnchor="17.0" AnchorPane.topAnchor="6.0">
+                                 <font>
+                                    <Font name="System Bold" size="30.0" />
+                                 </font>
+                              </Label>
+                              <ChoiceBox fx:id="themeChoiceBox" layoutX="2.0" layoutY="70.0" prefHeight="31.0" prefWidth="160.0" AnchorPane.leftAnchor="2.0" AnchorPane.rightAnchor="149.0" AnchorPane.topAnchor="70.0">
+                                 <opaqueInsets>
+                                    <Insets />
+                                 </opaqueInsets>
+                              </ChoiceBox>
+                              <Button fx:id="changeThemeButton" layoutX="164.0" layoutY="70.0" mnemonicParsing="false" onAction="#changeTheme" prefHeight="31.0" text="CHANGE THEME" AnchorPane.leftAnchor="170.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="70.0">
+                                 <font>
+                                    <Font name="System Bold" size="15.0" />
+                                 </font>
+                              </Button>
+                           </children>
+                        </AnchorPane>
+                     </children>
+                  </AnchorPane>
+              </items>
+            </SplitPane>
+         </children>
+      </HBox>
+   </children>
+</AnchorPane>
